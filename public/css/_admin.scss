@@ -1,0 +1,61 @@
+// css page connexion
+/*
+BOILERPLATE
+*/
+
+$bg: #8F8C8C;
+$ocre: #CDB575;
+$bg2: #2D2E2F;
+$blanc: #fff;
+
+.connexion {
+    background-image: url(../img/pexels-pixabay-276514.jpg);
+    background-size: cover;
+    background-position: 10%;
+
+    .login {
+        h1 {
+            text-align: center;
+            padding-top: 1em;
+        }
+
+        form {
+            border: 2px solid $ocre;
+            background-color: #8f8c8c9d;
+            padding: 2em;
+            margin-top: 16rem;
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                margin: 1rem;
+                width: 65%;
+                height: 50px;
+                text-align: center;
+            }
+
+            .btn_submit {
+                cursor: pointer;
+                width: 65%;
+                height: 70px;
+                background-color: $ocre;
+                font-family: 'raleway', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                text-transform: uppercase;
+                margin: 2rem auto;
+                &:hover {
+                    color: $blanc;
+                    border: 1px solid black;
+                    box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                }
+            }
+
+        }
+    }
+}

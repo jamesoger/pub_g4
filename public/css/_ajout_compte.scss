@@ -1,0 +1,158 @@
+/*
+BOILERPLATE page ajout_employés
+*/
+
+$bg: #8F8C8C;
+$ocre: #CDB575;
+$bg2: #2E3031;
+$blanc: #fff;
+
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $bg;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.ajout_compte {
+
+    background-image: url(../img/pexels-pixabay-276514.jpg);
+    background-size: cover;
+    background-position: 10%;
+
+
+    .boites {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 12rem;
+        display: flex;
+        justify-content: space-between;
+
+        .employe {
+
+            border: 2px solid $ocre;
+            background-color: #8f8c8c9d;
+            padding: 2em;
+            width: 40%;
+            height: auto;
+
+            h1 {
+                text-align: center;
+                font-size: 26px;
+            }
+
+            p {
+                color: $blanc;
+                padding-top: 0.5em;
+                font-size: 20px;
+            }
+
+            .modif {
+                position: relative;
+                left: 70%;
+                bottom: 5%;
+
+                a {
+                    width: 40px;
+                    padding: 0.35em;
+                    background-color: $ocre;
+                    margin-left: 0.5rem;
+
+                    &:hover {
+                        color: $bg2;
+                        border: 1px solid black;
+                        box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $blanc;
+                padding: 1em;
+
+
+            }
+
+
+
+        }
+
+        form {
+            h1 {
+                font-size: 26px;
+            }
+
+            height: 600px;
+            border: 2px solid $ocre;
+            background-color: #8f8c8c9d;
+            padding: 2em;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                margin: 1rem;
+                width: 80%;
+                height: 50px;
+                text-align: center;
+
+
+            }
+        }
+
+    }
+
+    .retour {
+        display: block;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        color: $blanc;
+        padding: 1em;
+        margin: 2rem auto;
+        background-color: $ocre;
+        border: 2px solid $blanc;
+
+        &:hover {
+            color: $bg2;
+            border: 1px solid black;
+            box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+        }
+    }
+
+    .btn_submit {
+        cursor: pointer;
+        width: 40%;
+        height: 70px;
+        background-color: $ocre;
+        font-family: 'raleway', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 2rem auto;
+
+        &:hover {
+            color: $blanc;
+            border: 1px solid black;
+            box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+        }
+
+    }
+
+}

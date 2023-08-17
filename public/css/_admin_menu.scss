@@ -1,0 +1,335 @@
+// css page admin_menu
+/*
+BOILERPLATE
+*/
+
+$bg: #8F8C8C;
+$ocre: #CDB575;
+$bg2: #2D2E2F;
+$blanc: #fff;
+
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.admin_menu {
+
+
+    header {
+        background-image: url(../img/pexels-miguel-á-padriñán-3785935.jpg);
+        background-size: cover;
+        background-position: 100%;
+
+        h1 {
+            margin-bottom: 20rem;
+            margin-top: 0;
+            padding-top: 3em;
+        }
+
+        .liens {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3em;
+            position: relative;
+            bottom: 10%;
+
+            a {
+                display: inline-block;
+                cursor: pointer;
+                text-decoration: none;
+                border: 2px solid $blanc;
+                color: $blanc;
+                padding: 2em;
+                background-color: $ocre;
+                font-family: 'raleway', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                text-transform: uppercase;
+
+                &:first-child {
+                    margin-right: 2rem;
+                }
+
+                &:hover {
+                    border: 1px solid black;
+                    box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                    color: $bg2;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.modifications {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+
+
+    .vos_mots_clefs {
+        border: 1px solid $ocre;
+        width: 40%;
+        text-align: center;
+        background-color: $bg2;
+
+        h2 {
+            color: $ocre;
+        }
+
+        p {
+            color: $blanc;
+
+        }
+
+        .important {
+            font-size: 13px;
+        }
+
+        .mot_clef_formulaire {
+            top: 0;
+            left: 20%;
+            display: block;
+
+
+            .texte {
+                height: 24px;
+            }
+
+            .submit {
+                background-color: $ocre;
+                width: 85px;
+                height: 24px;
+                cursor: pointer;
+                bottom: 5%;
+                margin-left: 0px;
+                border-radius: 0;
+
+                &:hover {
+                    border: 1px solid black;
+                    box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                    font-size: 12px;
+                }
+            }
+
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 20px;
+
+            a {
+                display: block;
+                width: 200px;
+                height: 25px;
+                margin: 1rem auto;
+                text-align: center;
+                font-size: 16px;
+                text-decoration: none;
+                color: $blanc;
+                background-color: $ocre;
+
+                &:hover {
+                    border: 1px solid rgb(241, 241, 241);
+                    box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                    color: $bg2;
+
+                }
+
+            }
+
+
+        }
+    }
+
+    .ajout_plat {
+        border: 1px solid $ocre;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3rem;
+        background-color: $bg2;
+        text-align: center;
+
+        h1 {
+            padding-top: 0.5em;
+        }
+
+        .champs {
+            display: flex;
+            margin-left: 60%;
+            margin-top: 1rem;
+
+            .star {
+                color: red;
+                font-size: 32px;
+            }
+
+            .requis {
+                color: $blanc;
+                font-size: 15px;
+            }
+        }
+
+        .ajout_formulaire {
+            width: 50%;
+            position: relative;
+            top: 0px;
+            left: 0px;
+
+            .require {
+                color: red;
+            }
+
+            textarea {
+                width: 90%;
+                height: 80px;
+                border: 4px solid $ocre;
+                font-size: 16px;
+            }
+
+            label {
+                color: $ocre;
+            }
+
+            h2 {
+                color: $ocre;
+                margin-bottom: 1%;
+            }
+
+            select {
+
+                height: 40px;
+                border: 4px solid $ocre;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            input {
+                width: 100%;
+                margin-left: 4rem;
+            }
+
+            .categories {
+                height: 28px;
+            }
+
+            .creez {
+                cursor: pointer;
+                width: 60%;
+                height: 70px;
+                border: 2px solid $blanc;
+                background-color: $ocre;
+                font-family: 'raleway', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                text-transform: uppercase;
+                margin: 1rem auto;
+
+                &:hover {
+                    border: 1px solid black;
+                    box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                    color: $blanc;
+
+                }
+            }
+        }
+    }
+}
+
+.conteneur_admin {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    h3 {
+        color: $ocre;
+        font-size: 28px;
+        text-align: center;
+        padding: 2em;
+    }
+
+    .carte {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3em;
+
+        .texte {
+            width: 30%;
+        }
+
+        h2 {
+            color: $bg2;
+            margin-bottom: 2rem;
+        }
+
+        .mot_clef {
+            width: 100%;
+            margin-bottom: 5rem;
+
+
+            h3 {
+                text-align: center;
+            }
+
+            hr {
+                width: 100%;
+                color: $ocre;
+            }
+
+        }
+
+        p {
+            color: $blanc;
+        }
+
+        .prix {
+            margin-left: 10%;
+        }
+
+        img {
+            margin: 4rem 0rem 0rem 10rem;
+
+
+        }
+
+        .ocre {
+            width: 75%;
+            border: 2px solid $ocre;
+            margin-top: 6rem;
+        }
+
+
+        a {
+            display: block;
+            background-color: #CDB575;
+            text-decoration: none;
+            color: black;
+            height: 30px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid $blanc;
+
+            &:hover {
+                border: 1px solid black;
+                box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+            }
+        }
+    }
+}

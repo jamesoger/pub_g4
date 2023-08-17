@@ -1,0 +1,72 @@
+.modification_employe {
+    background-image: url(../img/pexels-pixabay-276514.jpg);
+    background-size: cover;
+    background-position: 10%;
+
+
+    h1 {
+        padding-top: 0.5em;
+    }
+
+    h2 {
+        color: $ocre;
+        text-align: center;
+    }
+
+    form {
+
+        margin: 0.75rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $ocre;
+        background-color: #8f8c8c9d;
+        padding: 0.5em;
+        width: 35%;
+        height: 20%;
+
+        .message_infos {
+            color: $blanc;
+            text-align: center;
+        }
+
+        input {
+            width: 50%;
+            height: 40px;
+            margin-top: 2rem;
+            text-align: center;
+
+        }
+
+        .btn_submit {
+            background-color: $ocre;
+            color: $blanc;
+            cursor: pointer;
+            font-size: 18px;
+
+            &:hover {
+                color: $bg2;
+                border: 1px solid black;
+                box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+            }
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $blanc;
+        background-color: $ocre;
+        width: 250px;
+        text-align: center;
+        padding: 0.5em;
+        margin: 0 auto 1.25rem;
+        border: 2px solid $blanc;
+
+        &:hover {
+            color: $bg2;
+            border: 2px solid black;
+            box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+        }
+    }
+}

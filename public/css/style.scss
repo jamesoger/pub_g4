@@ -1,0 +1,709 @@
+/*
+BOILERPLATE
+*/
+
+$bg: #8F8C8C;
+$ocre: #CDB575;
+$bg2: #2E3031;
+$blanc: #F6EDED;
+
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $bg;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+h1 {
+    font-family: "charcuterie-deco", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 69px;
+    color: $ocre;
+    text-align: center;
+
+}
+
+
+header {
+
+    height: 100vh;
+    background-image: url(../img/banniere2.png);
+    background-size: cover;
+    background-position: center top 20%;
+
+    .nav {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+
+        a {
+            width: 20%;
+            display: block;
+            text-align: center;
+            padding: 1em;
+            color: $blanc;
+            text-decoration: none;
+            font-size: 32px;
+
+            &:hover {
+                color: $ocre;
+                text-decoration: underline 1px solid $ocre;
+                font-weight: 600;
+            }
+        }
+
+        .logo_header {
+            width: 17%;
+            height: auto;
+
+        }
+
+    }
+
+    h1 {
+        color: rgb(255, 254, 254);
+        text-align: center;
+        font-size: 85px;
+        margin-top: 9rem;
+        margin-bottom: 4rem;
+
+    }
+
+    .bouton_menu {
+        display: block;
+        text-align: center;
+        width: 300px;
+        height: 80px;
+        border: 2px solid $blanc;
+        padding: 1em;
+        margin: 6rem auto;
+        background-color: $ocre;
+        font-family: 'raleway', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            border: 1px solid black;
+            color: $blanc;
+            box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+        }
+   }
+
+}
+
+main {
+    background-color: $bg;
+
+
+    h1 {
+        text-align: center;
+        padding-top: 1.25em;
+    }
+
+    .div-menu {
+
+        display: flex;
+        margin: 0.25rem auto;
+        width: 80vw;
+        height: 80vh;
+        margin-bottom: 6rem;
+
+        .entree {
+            width: 40%;
+            height: 80%;
+            padding-right: 4em;
+
+            img {
+                width: 100%;
+                min-height: 100%;
+            }
+
+            .titre {
+                height: 20%;
+                position: relative;
+                top: 20%;
+                left: 0%;
+                background-color: #a5a3a38f;
+
+                &:hover {
+                    box-shadow: inset 4px 4px 5px 5px rgba(50, 50, 50, 0.75);
+                }
+
+                .titre-entree {
+                    text-decoration: none;
+                    position: relative;
+                    top: 20%;
+                    left: 37%;
+                    font-size: 40px;
+                    color: $blanc;
+
+                    &:hover {
+                        color: $ocre;
+                    }
+
+
+                }
+            }
+
+        }
+
+        .repas {
+            padding-right: 4em;
+            width: 40%;
+            height: 80%;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+
+            .titre {
+                height: 20%;
+                position: relative;
+                top: 20%;
+                left: 0%;
+                background-color: #a5a3a38f;
+
+                &:hover {
+                    box-shadow: inset 4px 4px 5px 5px rgba(50, 50, 50, 0.75);
+                }
+
+                .titre-repas {
+                    position: relative;
+                    top: 20%;
+                    left: 37%;
+                    text-decoration: none;
+                    font-size: 40px;
+                    color: $blanc;
+
+                    &:hover {
+                        color: $ocre;
+                    }
+                }
+            }
+        }
+
+        .dessert {
+            width: 40%;
+            height: 80%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .titre {
+                height: 20%;
+                position: relative;
+                top: 20%;
+                left: 0%;
+                background-color: #a5a3a38f;
+
+                &:hover {
+                    box-shadow: inset 4px 4px 5px 5px rgba(50, 50, 50, 0.75);
+                }
+
+                .titre-dessert {
+                    position: relative;
+                    top: 20%;
+                    left: 37%;
+                    text-decoration: none;
+                    font-size: 40px;
+                    color: $blanc;
+
+                    &:hover {
+                        color: $ocre;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    #histoire {
+        background-color: $bg2;
+        padding-top: 2em;
+        margin-top: 3em;
+
+        p {
+            color: $blanc;
+            text-align: center;
+            font-size: 19px;
+            margin-top: 5rem;
+            padding-bottom: 7rem;
+        }
+    }
+
+    .burgers {
+        background-color: #707070;
+        width: 100%;
+        height: 900px;
+        border-bottom: 3px solid $ocre;
+
+        hr {
+            border: 2px solid $ocre;
+        }
+
+        .bloc {
+            width: 83%;
+            margin: 0.5rem auto;
+
+            h3 {
+                color: $blanc;
+                text-transform: uppercase;
+                font-size: 50px;
+                padding-top: 2em;
+
+
+            }
+
+            button {
+                cursor: pointer;
+                width: 22%;
+                height: 70px;
+                background-color: $ocre;
+                font-family: 'raleway', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                text-transform: uppercase;
+                margin: 0rem;
+                position: relative;
+                top: 200px;
+
+                &:hover {
+                    color: $blanc;
+                    box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                }
+
+
+            }
+
+            .burgers_div {
+                width: 70%;
+                display: flex;
+                position: relative;
+                bottom: 280px;
+                left: 30%;
+                margin-right: 0;
+
+
+                .boite_image {
+                    overflow: hidden;
+                    border-radius: 10%;
+                    width: 520px;
+                    height: 490px;
+                    margin-left: 4rem;
+                    margin-right: 0;
+
+
+                    &:first-child {
+                        margin-left: 1rem;
+                    }
+
+                    img {
+                        width: 520px;
+                        height: 490px;
+                        object-fit: cover;
+                        overflow: hidden;
+                        border-radius: 10%;
+                        transition: 1s ease-in-out;
+
+
+                        &:hover {
+                            -webkit-transform: scale(1.2);
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .infolettre {
+
+        position: relative;
+        height: 100vh;
+
+
+        .video {
+            margin: auto;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            filter: brightness(0.7);
+
+
+        }
+
+        .image_infolettre {
+            margin: auto;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 0.3s;
+            transition-delay: 0.2s;
+
+            &:hover {
+                opacity: 0;
+            }
+
+        }
+
+        .bravo {
+            background-color: #2E3031;
+            width: 700px;
+            height: 600px;
+            border: 5px solid #CDB575;
+            position: absolute;
+            left: 30%;
+            z-index: 4;
+            box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+            top: 12%;
+             h1 {
+            color: $ocre;
+            padding-top: 0px;
+            position: relative;
+            }
+             p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: $ocre;
+            position: relative;
+            padding-top: 2em;
+
+            } 
+            img {
+            
+            display: block;
+            width: 30%;
+            height: auto;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        }
+
+
+    
+        .material-symbols-outlined {
+            font-size: 34px;
+            margin-left: 93%;
+            margin-top: 2%;
+            color: $blanc;
+            cursor: pointer;
+        }
+
+
+    }
+
+    .bravo.active {
+        display: block;
+        opacity: 0;
+        animation: transition 0.3s ease-in-out 0.3s forwards;
+
+    }
+
+    .info {
+        z-index: 3;
+        color: $blanc;
+        width: 20%;
+        font-size: 2rem;
+        position: relative;
+        top: 30%;
+        left: 30%;
+
+
+    }
+
+    form {
+        z-index: 2;
+        position: relative;
+        width: 60%;
+        top: 30%;
+        left: 30%;
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 28%;
+            height: 38px;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            text-align: center;
+
+        }
+
+        .submit {
+            cursor: pointer;
+            margin-left: 24rem;
+            position: relative;
+            bottom: 100px;
+            width: 20%;
+            height: 60px;
+            border-radius: 30px;
+            background-color: $ocre;
+
+            &:hover {
+                box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+                font-size: 19px;
+                color: $blanc;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+.commentaires_hr {
+    border: 2px solid $ocre;
+}
+
+.commentaires {
+    background-image: url(../img/tartare2.png);
+    background-size: cover;
+    background-position: 25%;
+    height: 650px;
+
+
+    .h2_commentaires {
+        position: relative;
+        top: 5%;
+        padding-bottom: 4em;
+        color: $blanc;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline 3px solid $ocre;
+        text-underline-offset: 22px;
+
+    }
+
+
+    .etoiles {
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-template-rows: auto;
+        height: 250px;
+        position: relative;
+
+
+        img {
+            margin: 5px;
+        }
+
+        p {
+            margin-top: 1rem;
+            margin-left: 16rem;
+            padding: 1em;
+            color: $blanc;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+    }
+
+}
+
+
+
+
+#nous_joindre {
+    background-color: $bg2;
+    border: 2px solid $ocre;
+
+
+    iframe {
+        display: block;
+        width: 30%;
+        height: 500px;
+        margin: 1rem auto 2rem;
+
+
+    }
+
+    h1 {
+        padding-top: 0.25em;
+    }
+
+    p {
+        text-align: center;
+        color: $ocre;
+        font-size: 25px;
+    }
+}
+
+
+
+footer {
+
+    background-color: $bg2;
+    height: 600px;
+
+    .gauche {
+        padding: 5rem;
+
+        .logo2 {
+            width: 15%;
+            height: 30%;
+        }
+
+        p {
+            color: $blanc;
+            font-size: 24px;
+        }
+
+        .reseaux {
+            margin-top: 4rem;
+
+            img {
+                margin-right: 1.5em;
+                width: 4%;
+            }
+
+            a {
+                display: contents;
+                height: 75px;
+            }
+
+        }
+
+    }
+
+
+
+    .nav_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        bottom: 500px;
+        right: 200px;
+
+        a {
+            color: $ocre;
+            padding: 0.5em;
+            font-size: 30px;
+            text-decoration: none;
+
+            &:hover {
+                color: $blanc;
+            }
+        }
+
+
+        .liens {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 3rem;
+
+            .copyright {
+                color: $blanc;
+            }
+
+            .admin {
+
+                font-size: 20px;
+                color: $blanc;
+                text-decoration: none;
+
+                &:hover {
+                    color: $ocre;
+                }
+            }
+
+            p {
+                margin-top: 0.5rem;
+                font-size: 20px;
+            }
+
+            img {
+
+                margin-left: 0.5rem;
+                margin-top: 0.5rem;
+                width: 4%;
+                height: 4%;
+            }
+
+        }
+
+    }
+
+}
+
+@keyframes transition {
+    0% {
+        margin-left: -70px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
+@import "_admin_menu.scss";
+@import "_admin.scss";
+@import "_ajout_compte.scss";
+@import "_menu.scss";
+@import "_modification_plat.scss";
+@import "_modification_employe.scss";
+@import "_utils.scss";

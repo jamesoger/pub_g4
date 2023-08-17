@@ -1,0 +1,85 @@
+//messages
+
+.msg {
+    overflow: hidden;
+	padding: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.material-icons {
+		margin-right: 0.5rem;
+	}
+
+	&.erreur {
+		background-color: lightcoral;
+		color: darkred;
+	}
+
+	&.succes {
+		background-color: lightgreen;
+		color: green;
+	}
+
+	&.ajout {
+		margin: 1rem;
+		position: relative;
+		right: 109px;
+	}
+
+	&.ajouter {
+		margin: 1rem;
+		position: relative;
+		right: 109px;
+	}
+
+	&.validation{
+		position: fixed;
+		margin:0 auto;
+		width: 30%;
+		height: 30%;
+		background-color: antiquewhite;
+
+	}
+
+
+}
+
+.attention{
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	margin: 0 auto;
+	padding: 0.25em;
+	width: 450px;
+	height: 320px;
+	background-color: $bg2;
+	border: 2px solid $ocre;
+	p{
+		color: $blanc;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	a{  
+		margin: 3rem auto;
+		width: 50%;
+		display: block;
+		text-align: center;
+		cursor: pointer;
+        text-decoration: none;
+        border: 2px solid $blanc;
+        color: $blanc;
+        padding: 1em;
+        background-color: $ocre;
+        font-family: 'raleway', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+		&:hover{
+			border: 1px solid black;
+			box-shadow: inset 4px 4px 5px 1px rgba(50, 50, 50, 0.75);
+			color: $bg2;
+		}
+	}
+}
